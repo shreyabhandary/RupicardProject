@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Credit Card Statement</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+<script src="script.js"> </script>
+
+
+<body>
+<div class="first-container">
+    <div class="flexing card">
+        <div class="card-info">
+            <span><strong>Full name:</strong> John Doe</span>
+            <span><strong>Address:</strong> 1234 Main Street, Suite 101, Metro City, USA</span>
+            <span><strong>Phone:</strong>  555-123-4567</span>
+            <span><strong>Card Number:</strong> 1234 5678 9012 3456</span>
+          </div>
+    </div>
+    <div class="logo flexing"><img src="logo.png" >
+     
+    </div>
+</div>
+<div class="header">
+    <h1>Niyo Global Credit Card Statement</h1>
+</div>
+
+
+
+
+    <div class="container-1">
+        <div class="headers">
+            <h1>Statement Summary</h1>
+        </div>
+    
+        <div class="section statement-date">
+            <div class="label">Statement Date:</div>
+            <div class="value" id="statement-date">01-09-2022</div>
+        </div>
+    
+        
+    
+        <div class="summary-grid">
+            <div class="summary-cell">
+                <div class="summary-label">Payment Due Date</div>
+            </div>
+            <div class="summary-cell">
+                <div class="summary-label">Total Amount Due</div>
+            </div>
+            <div class="summary-cell">
+                <div class="summary-label">Minimum Amount Due</div>
+            </div>
+            <div class="summary-cell">
+                <div class="summary-label">Credit Limit</div>
+            </div>
+            <div class="summary-cell">
+                <div class="summary-label">Available Credit Limit</div>
+            </div>
+            <div class="summary-cell">
+                <div class="summary-label">Available Cash Limit</div>
+            </div>
+        </div>
+    </div>
+
+        <div class="headers Calculation ">
+            <h1>Calculation Summary</h1>
+        </div>
+    
+        <div class="calculation-grid">
+            <div class="calculation-cell">
+                <div class="calculation-label">Opening Balance</div>
+            </div>
+            <div class="calculation-cell">
+                <div class="calculation-label">Purchase/Debits</div>
+            </div>
+            <div class="calculation-cell">
+                <div class="calculation-label">Finance Charges</div>
+            </div>
+            <div class="calculation-cell">
+                <div class="calculation-label">Payment/Credit</div>
+            </div>
+            <div class="calculation-cell">
+                <div class="calculation-label">Total Amount Due</div>
+            </div>
+        </div>
+    
+    </div>
+
+<div class="headers">
+    <h1>Transactions</h1>
+    <table id="transactions">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Debit</th>
+            <th>Credit</th>
+          </tr>
+        </thead>
+        <tbody class="content"></tbody>
+      </table>
+</div>
+
+
+
+<div class="important-info">
+    <h2>Important Information</h2>
+    <ul>
+        <li>Method of payment: You can pay the outstanding dues from the App itself, through Internal Fund Transfer (IFT) where money gets paid directly from Niyo SBM Savings Account.</li>
+       
+        <li> Making only the minimum payment every month would result in the repayment stretching over months/years with consequential 
+            compounded interest payment on your outstanding balance.</li>
+            <li>  If the minimum amount due or part amount less than the total amount due is paid, interest charges are applicable (including fresh 
+                purchases, if any) on an average daily reducing balance method</li>
+            <li> Pay your total amount due in entirety to continue having benefits of interest-free period. Interest-Free Credit Period is the time period 
+                from the date of transaction to the due date of payment, wherein interest free payment can be made. This facility won’t be available if 
+                you have not paid the previous months’ outstanding amount in entirety</li>
+            <li>  If your Global Credit Card is lost or stolen, you can block it from the Niyo App or inform the bank directly by calling 1800-103-3817 </li>
+            <li>  Billing disputes resolution: All the contents of the Card Statement will be deemed to be correct and accepted if you do not inform us of 
+                any discrepancies within 30 (thirty) days of the Card Statement date. In the event of billing disputes/discrepancies, we shall investigate 
+                and confirm the liability for such transactions. On receipt of such information, SBM may reverse the charge on a temporary basis 
+                pending investigation. If on completion of subsequent investigations, the liability of such charges is to the Cardholder’s account, the 
+                charge will be reinstated in a subsequent Card Statement. Upon receipt of dispute, within a maximum period of 30 (thirty) days, SBM 
+                would provide necessary documents, wherever applicable and received from the member bank, subject to operating guidelines laid 
+                down by the respective franchisee like Visa, Master Card, etc. GST levied will not be reversed on any dispute on fees and charges or 
+                interest.</li>
+
+    </ul>
+</div>
+
+<div class="key-factor headers">
+    <h1>Key Fact Statement</h1>
+    <table class="key-fact-table">
+        <thead>
+          <tr class="highlighter">
+            <th>Description of Charges</th>
+            <th>Fees</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="highlight">
+            <td>Joining Fee for the Primary and the Add-on cardholder</td>
+            <td>₹500 waived off</td>
+          </tr>
+          <tr>
+            <td>Annual Membership Fee for the Primary and the Add-on cardholder</td>
+            <td>₹500 waived off</td>
+          </tr>
+          <tr class="highlight">
+            <td>Requirement for Global Credit Card Issuance</td>
+            <td>Minimum Fixed Deposit (FD) of ₹50000</td>
+          </tr>
+          <tr >
+            <td>Card Issuance Fee</td>
+            <td>Nil</td>
+          </tr>
+          <tr class="highlight">
+            <td>Card Re-issuance Fee </td>
+            <td>₹249</td>
+          </tr>
+          <tr >
+            <td>Over Limit Fee </td>
+            <td>₹150</td>
+          </tr>
+          <tr class="highlight">
+            <td>Interest Free Period </td>
+            <td>Upto 45 days</td>
+          </tr>
+
+        </tbody>
+        
+      </table>
+      
+</div>
+
+<div class="contact-info">
+    <h2>Contact Information</h2>
+    <table>
+        <!-- Add contact information table here -->
+    </table>
+</div>
+
+
+
+</body>
+</html>

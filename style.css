@@ -1,0 +1,194 @@
+  /* Basic reset */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  /* Define fonts and colors */
+  body { font-family: Arial, sans-serif; color: #333; background-image: url('bg.png');}
+  h1, h2 {color: #f3f7ff;}
+
+  /* Header styles */
+  .header { background-color: #002060; color: white; padding: 20px; text-align: center; }
+
+  /* Section styles */
+  .section { padding: 20px; margin-bottom: 20px; }
+  .blue-section { background-color: #D9E1F2; }
+  .green-section { background-color: #E2EFD9; }
+  .yellow-section { background-color: #FFE699; }
+  
+  .container-1 {
+    width: 90%;
+    margin: auto;
+}
+.first-container {
+    display: flex;
+  }
+
+  .half-width {
+    flex: 1; /* Each div will take up an equal amount of space */
+    padding: 20px; /* Padding for content inside the divs */
+    box-sizing: border-box; /* Padding is included in the width */
+  }
+.card {
+    font-family: 'Arial', sans-serif;
+    color: #070707;
+    background: linear-gradient(to right bottom, #f0f4fa, #fcfdff);
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+
+  .icon {
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+
+  .card-info {
+    margin-bottom: 15px;
+  }
+
+  .card-info span {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .card-number {
+    letter-spacing: 3px;
+  }
+.headers h1 {
+    background-color: #b9bddb;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.section {
+    display: flex;
+    margin: 20px 0;
+    background-color: white;
+}
+
+.label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.value {
+    flex-grow: 1;
+}
+
+.summary-grid, .calculation-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.summary-cell, .calculation-cell {
+    color: #000;
+    background-color: white;
+    border: 1px solid #717375;
+    padding: 40px 0;
+    position: relative;
+}
+
+.summary-label, .calculation-label {
+    font-weight: bold;
+    color: #141415;
+    display: inline-block;
+    background-color: rgb(152, 152, 152);
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 10px;
+}
+
+  /* Table styles */
+  table { width: 100%; border-collapse: collapse; }
+  th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+  th { background-color: #f2f2f2; }
+  
+  /* Footer styles */
+  .footer { background-color: #f2f2f2; padding: 20px; text-align: center; }
+
+  .important-info {
+    background-color: #f7f7f7;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    counter-reset: info-counter;
+}
+.important-info h2 {
+    color: #000;
+    margin-bottom: 10px;
+}
+.important-info ul {
+    list-style: none;
+    padding-left: 0;
+}
+.important-info li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.important-info li:before {
+    counter-increment: info-counter;
+    content: counter(info-counter) ". ";
+    position: absolute;
+    left: 0;
+}
+.contact-info {
+    background-color: #e7e7e7;
+    padding: 10px;
+}
+.contact-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.contact-info th, .contact-info td {
+    text-align: left;
+    padding: 5px;
+}
+.contact-info th {
+    background-color: #d7d7d7;
+}
+
+.key-factor{
+    background-color: white;
+}
+.key-fact-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  .key-fact-table thead {
+    background-color: #f2f2f2;
+  }
+  .key-fact-table th,
+  .key-fact-table td {
+    border: 1px solid #7c9bdf;
+    padding: 8px;
+    text-align: left;
+  }
+  .key-fact-table th {
+    font-weight: normal;
+    color: #333;
+  }
+  .key-fact-table .highlight {
+    background-color: #edf0f3;
+  }
+  .key-fact-table .highlighter {
+    background-color: #88baec;
+  }
+  .key-fact-table tfoot td {
+    font-style: italic;
+    font-size: 0.8em;
+    padding-top: 10px;
+    border-top: 2px solid #ccc;
+  }
+  .content{
+    background-color: white;
+  }
